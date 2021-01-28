@@ -6,6 +6,7 @@
 
 #navbar {
     display: flex;
+    justify-content: space-between;
     background-color: black;
     width: auto;
     height: 40px;
@@ -13,7 +14,7 @@
 }
 
 #logo {
-    width: 100px;
+    width: 150px;
     display: flex;
     background-color: green;
     justify-content: center;
@@ -24,17 +25,25 @@
     color: white;
 }
 #links {
-    width: 800px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     justify-content: space-around;
-
+    list-style: none;
     align-items: center;
-
 }
 
-#links > div > a:hover {
+#links > li {
+    padding: 100px;
+}
+
+#links > li > a:visited, #links > li > a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#links > li > a:hover {
     background-color: white;
     color: black;
 }
@@ -43,13 +52,10 @@
     color: white;
 }
 
-#links > a:visited {
-    color: white;
-}
 #columns {
     display: flex;
     flex-direction: row;
-    height: 400px;
+    height: 500px;
 }
 
 #columns > div:nth-of-type(1) { 
@@ -65,35 +71,50 @@
     display: flex;
     flex-grow: 5;
     flex-direction: column;
-
+    justify-content:space-between;
+    height: 100%;
     margin: 10px;
 }
 
 .left-panels {
     border: 1px solid black;
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
 }
 
 .left-panels > h4 {
     margin-bottom: 5px;
-    display: flex;
 }
 
 #panel1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+
+#panel2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#panel3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .boxes {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     background-color: black;
+    color: white;
     margin: 10px;
 }
 #right-column {
     border: 1px solid black;
-    max-width: 300px;
+    height: 100%;
+    max-width: 400px;
     margin: 10px;
     padding: 10px;
 }
