@@ -77,14 +77,20 @@
 
 .left-panels > h4 {
     margin-bottom: 5px;
+    display: flex;
 }
 
-.left-panels > ul > li {
-    margin-left:35px;
-    padding: 3px;
-    font-size: 12px;
+#panel1 {
+    display: flex;
+    flex-direction: row;
 }
 
+.boxes {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin: 10px;
+}
 #right-column {
     border: 1px solid black;
     max-width: 300px;
